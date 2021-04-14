@@ -36,7 +36,7 @@ const Login = () => {
 
           }).catch(function(error) {
             // Handle Errors here.
-            
+             
             const errorMessage = error.message;
             console.log(errorMessage);
           });
@@ -54,9 +54,10 @@ const Login = () => {
           });
     }
     return (
-        <div>
-            <h1>This is Login</h1>
-            <button onClick={handleGoogleSignIn}>Google Sign In</button>
+        <div className="container " style={{padding: '30px', border: '1px solid gray', borderRadius: '5px', marginTop: '50px' ,width:"40%"}}>
+            <h1 style={{textAlign: 'center'}}>Login</h1>
+            <button className="btn btn-secondary"  style={{margin: '0 auto',
+    display: 'block'}}onClick={handleGoogleSignIn}>Google Sign In</button>
         </div>
     );
 };
